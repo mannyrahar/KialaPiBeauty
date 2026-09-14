@@ -16,8 +16,7 @@
               300: '#E6C875',
               400: '#D4AF37',
               500: '#AA820A',
-            },
-            dark: '#121212'
+            }
           },
           fontFamily: {
             serif: ['Playfair Display', 'serif'],
@@ -28,18 +27,18 @@
     }
   </script>
 </head>
-<body class="bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-gold-400 selection:text-black">
+<body class="bg-neutral-950 text-neutral-100 font-sans antialiased">
 
   <!-- Header / Nav -->
   <header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="font-serif text-2xl font-bold tracking-wider text-gold-400">KALAPI <span class="text-white font-light text-xl">BEAUTY</span></a>
+      <a href="#accueil" class="font-serif text-2xl font-bold tracking-wider text-gold-400">KIALA PI <span class="text-white font-light text-xl">BEAUTY</span></a>
       <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-neutral-300 font-medium">
         <a href="#accueil" class="hover:text-gold-400 transition-colors">Accueil</a>
         <a href="#videos" class="hover:text-gold-400 transition-colors">Vidéos</a>
         <a href="#tarifs" class="hover:text-gold-400 transition-colors">Prestations & Tarifs</a>
       </nav>
-      <a href="#tarifs" class="bg-gold-400 hover:bg-gold-300 text-black px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg shadow-gold-400/20">Réserver</a>
+      <a href="#tarifs" class="bg-gold-400 hover:bg-gold-300 text-black px-5 py-2.5 rounded-full font-semibold text-sm transition-all">Réserver</a>
     </div>
   </header>
 
@@ -60,7 +59,7 @@
     </div>
   </section>
 
-  <!-- Section Vidéos Cheveux Lisses -->
+  <!-- Section Vidéos -->
   <section id="videos" class="py-20 bg-neutral-900/50 border-y border-neutral-800">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -69,26 +68,20 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <!-- Vidéo 1 -->
-        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
-          <div class="relative aspect-[9/16] max-h-[500px] w-full bg-neutral-950 flex items-center justify-center">
-            <video autoplay loop muted playsinline class="w-full h-full object-cover">
-              <source src="assets/videos/cheveux-lisses-1.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden">
+          <video autoplay loop muted playsinline class="w-full h-80 object-cover">
+            <source src="assets/videos/cheveux-lisses-1.mp4" type="video/mp4">
+          </video>
           <div class="p-6">
-            <h3 class="font-serif text-xl text-white mb-1">Lissage & Soin Botox</h3>
-            <p class="text-sm text-neutral-400">Brillance intense, nutrition profonde et zéro frisottis.</p>
+            <h3 class="font-serif text-xl text-white mb-1">Soin Botox Capillaire</h3>
+            <p class="text-sm text-neutral-400">Brillance intense & nutrition profonde.</p>
           </div>
         </div>
 
-        <!-- Vidéo 2 -->
-        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
-          <div class="relative aspect-[9/16] max-h-[500px] w-full bg-neutral-950 flex items-center justify-center">
-            <video autoplay loop muted playsinline class="w-full h-full object-cover">
-              <source src="assets/videos/cheveux-lisses-2.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden">
+          <video autoplay loop muted playsinline class="w-full h-80 object-cover">
+            <source src="assets/videos/cheveux-lisses-2.mp4" type="video/mp4">
+          </video>
           <div class="p-6">
             <h3 class="font-serif text-xl text-white mb-1">Soin Tokio Inkarami</h3>
             <p class="text-sm text-neutral-400">Réparation moléculaire et fluidité extrême.</p>
@@ -98,36 +91,31 @@
     </div>
   </section>
 
-  <!-- Section Tarifs & Services -->
+  <!-- Section Tarifs -->
   <section id="tarifs" class="py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-gold-400 uppercase tracking-widest text-xs font-bold">Tarification MGA</span>
         <h2 class="font-serif text-3xl md:text-4xl text-white mt-2 mb-4">Nos Prestations & Tarifs</h2>
-        <p class="text-neutral-400">Des soins d'exception adaptés à la nature de vos cheveux.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-neutral-900 border border-neutral-800 hover:border-gold-400/50 p-8 rounded-2xl transition-all">
+        <div class="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl">
           <h3 class="font-serif text-xl text-white mb-2">Soin Botox Capillaire</h3>
-          <p class="text-xs text-neutral-500 mb-6">Reconstituant intense & brillance</p>
-          <div class="text-2xl font-bold text-gold-400 mb-6">318 000 MGA</div>
-          <p class="text-sm text-neutral-400 leading-relaxed">Diagnostic personnalisé, application du soin réparateur et coiffage finition miroir.</p>
+          <div class="text-2xl font-bold text-gold-400 mb-4">318 000 MGA</div>
+          <p class="text-sm text-neutral-400">Diagnostic personnalisé, application du soin réparateur et coiffage finition miroir.</p>
         </div>
 
-        <div class="bg-neutral-900 border border-gold-400 p-8 rounded-2xl relative shadow-xl shadow-gold-400/5">
-          <span class="absolute -top-3 right-6 bg-gold-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Populaire</span>
+        <div class="bg-neutral-900 border border-gold-400 p-8 rounded-2xl">
           <h3 class="font-serif text-xl text-white mb-2">Soin Tokio Inkarami</h3>
-          <p class="text-xs text-neutral-500 mb-6">Haute technologie aux 8 kératines</p>
-          <div class="text-2xl font-bold text-gold-400 mb-6">338 000 MGA</div>
-          <p class="text-sm text-neutral-400 leading-relaxed">Soin régénérant en profondeur redonnant élasticité, force et éclat à la fibre capillaire.</p>
+          <div class="text-2xl font-bold text-gold-400 mb-4">338 000 MGA</div>
+          <p class="text-sm text-neutral-400">Soin régénérant en profondeur redonnant élasticité et force à la fibre capillaire.</p>
         </div>
 
-        <div class="bg-neutral-900 border border-neutral-800 hover:border-gold-400/50 p-8 rounded-2xl transition-all">
+        <div class="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl">
           <h3 class="font-serif text-xl text-white mb-2">Soin Tokio + Coupe</h3>
-          <p class="text-xs text-neutral-500 mb-6">Prestation complète sur-mesure</p>
-          <div class="text-2xl font-bold text-gold-400 mb-6">510 000 MGA</div>
-          <p class="text-sm text-neutral-400 leading-relaxed">Traitement Tokio Limited associé à une coupe structurée pour sublimer les pointes.</p>
+          <div class="text-2xl font-bold text-gold-400 mb-4">510 000 MGA</div>
+          <p class="text-sm text-neutral-400">Traitement Tokio Limited associé à une coupe structurée sur-mesure.</p>
         </div>
       </div>
     </div>
