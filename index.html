@@ -1,120 +1,142 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KALAPI Beauty - Salon de Lissage & Soins Capillaires</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIALA PI Beauty | Salon de Coiffure & Lissages Premium</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              100: '#FBF5E8',
+              300: '#E6C875',
+              400: '#D4AF37',
+              500: '#AA820A',
+            },
+            dark: '#121212'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    
-<!-- Bannière Principale (Hero) avec Vidéo -->
-<section id="accueil" class="hero">
-    <!-- Vidéo d'arrière-plan -->
-    <video autoplay loop muted playsinline class="hero-video">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-hairdresser-washing-a-clients-hair-41527-large.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas les vidéos HTML5.
-    </video>
+<body class="bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-gold-400 selection:text-black">
 
-    <!-- Calque sombre pour garder le texte lisible -->
-    <div class="hero-overlay"></div>
-
-    <!-- Contenu texte par-dessus la vidéo -->
-    <div class="hero-text">
-        <h1>Sublimez vos cheveux chez KALAPI Beauty</h1>
-        <p>Experts en lissage brésilien, botox capillaire et soins haut de gamme.</p>
-        <a href="#reservation" class="btn-main">Réserver votre séance</a>
+  <!-- Header / Nav -->
+  <header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl font-bold tracking-wider text-gold-400">KALAPI <span class="text-white font-light text-xl">BEAUTY</span></a>
+      <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-neutral-300 font-medium">
+        <a href="#accueil" class="hover:text-gold-400 transition-colors">Accueil</a>
+        <a href="#videos" class="hover:text-gold-400 transition-colors">Vidéos</a>
+        <a href="#tarifs" class="hover:text-gold-400 transition-colors">Prestations & Tarifs</a>
+      </nav>
+      <a href="#tarifs" class="bg-gold-400 hover:bg-gold-300 text-black px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg shadow-gold-400/20">Réserver</a>
     </div>
-</section>
+  </header>
 
-    <!-- Entête / Navigation -->
-    <header>
-        <div class="logo">KALAPI <span>Beauty</span></div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#prestations">Prestations</a></li>
-                <li><a href="#galerie">Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#reservation" class="btn-rdv">Prendre RDV</a>
-    </header>
-
-    <!-- Bannière Principale (Hero) -->
-    <section id="accueil" class="hero">
-        <div class="hero-text">
-            <h1>Sublimez vos cheveux chez KALAPI Beauty</h1>
-            <p>Experts en lissage brésilien, botox capillaire et soins haute gamme.</p>
-            <a href="#reservation" class="btn-main">Réserver votre séance</a>
-        </div>
-    </section>
-
-    <!-- Nos Prestations -->
-    <section id="prestations" class="services">
-        <h2>Nos Prestations & Tarifs</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Lissage Brésilien</h3>
-                <p>Nourrit en profondeur, élimine les frisottis et apporte une brillance miroir.</p>
-                <span class="price">À partir de 90€</span>
-            </div>
-            <div class="service-card">
-                <h3>Soin Botox Capillaire</h3>
-                <p>Régénère la fibre capillaire abîmée et redonne du volume et de l'éclat.</p>
-                <span class="price">À partir de 60€</span>
-            </div>
-            <div class="service-card">
-                <h3>Lissage Tannin / Organic</h3>
-                <p>Formule naturelle pour détendre le cheveu tout en préservant sa santé.</p>
-                <span class="price">À partir de 100€</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prise de rendez-vous / Contact -->
-    <section id="reservation" class="reservation">
-        <h2>Prendre Rendez-vous</h2>
-        <p>Pour réserver un créneau, contactez-nous directement ou utilisez notre module en ligne.</p>
-        <a href="https://wa.me/YOURPHONE" class="btn-whatsapp" target="_blank">Réserver via WhatsApp</a>
-    </section>
-
-    <!-- Module de réservation Calendly -->
-<section id="reservation" class="reservation">
-    <h2>Réserver votre prestation en ligne</h2>
-    
-    <!-- Collez le code Calendly ci-dessous -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE-LIEN-CALENDLY" style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</section>
-
-<!-- Section Tarifs & Services -->
-<section class="tarifs">
-    <h2>Nos Tarifs & Services</h2>
-    
-    <div class="service-card">
-      <h3>Soin Botox Capillaire</h3>
-      <p class="price">318 000 MGA</p>
-      <p>Diagnostic personnalisé et soin reconstituant intense.</p>
-    </div>
-  
-    <div class="service-card">
-      <h3>Soin Tokio Inkarami</h3>
-      <p class="price">338 000 MGA</p>
-      <p>Soin haute technologie aux 8 kératines.</p>
-    </div>
-  
-    <div class="service-card">
-      <h3>Formation Lissage & Soins</h3>
-      <p class="price">1 500 000 MGA</p>
-      <p>Formation complète aux techniques de lissage et diagnostic.</p>
+  <!-- Hero Section -->
+  <section id="accueil" class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <span class="text-gold-400 uppercase tracking-widest text-xs font-bold bg-gold-400/10 px-4 py-2 rounded-full border border-gold-400/20">Haute Coiffure & Lissages de Luxe</span>
+      <h1 class="font-serif text-4xl md:text-6xl font-normal mt-6 mb-6 leading-tight">
+        Sublimez vos cheveux chez <br><span class="italic font-bold text-gold-400">KIALA PI Beauty !</span>
+      </h1>
+      <p class="text-neutral-400 text-base md:text-lg max-w-2xl mx-auto mb-10 font-light">
+        Révélez la brillance et la santé de votre chevelure grâce à nos lissages sur-mesure et nos soins haute technologie.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#tarifs" class="bg-gold-400 hover:bg-gold-300 text-black px-8 py-3.5 rounded-full font-bold transition-all">Découvrir nos tarifs</a>
+        <a href="#videos" class="border border-neutral-700 hover:border-gold-400 text-white px-8 py-3.5 rounded-full font-medium transition-all">Voir nos réalisations</a>
+      </div>
     </div>
   </section>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2026 KALAPI Beauty. Tous droits réservés.</p>
-    </footer>
+  <!-- Section Vidéos Cheveux Lisses -->
+  <section id="videos" class="py-20 bg-neutral-900/50 border-y border-neutral-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl md:text-4xl text-white mb-4">Nos Résultats en Vidéo</h2>
+        <p class="text-neutral-400">Découvrez l'effet miroir et la souplesse incomparable de nos lissages.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Vidéo 1 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
+          <div class="relative aspect-[9/16] max-h-[500px] w-full bg-neutral-950 flex items-center justify-center">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+              <source src="assets/videos/cheveux-lisses-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-white mb-1">Lissage & Soin Botox</h3>
+            <p class="text-sm text-neutral-400">Brillance intense, nutrition profonde et zéro frisottis.</p>
+          </div>
+        </div>
+
+        <!-- Vidéo 2 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
+          <div class="relative aspect-[9/16] max-h-[500px] w-full bg-neutral-950 flex items-center justify-center">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+              <source src="assets/videos/cheveux-lisses-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl text-white mb-1">Soin Tokio Inkarami</h3>
+            <p class="text-sm text-neutral-400">Réparation moléculaire et fluidité extrême.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Tarifs & Services -->
+  <section id="tarifs" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold-400 uppercase tracking-widest text-xs font-bold">Tarification MGA</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-white mt-2 mb-4">Nos Prestations & Tarifs</h2>
+        <p class="text-neutral-400">Des soins d'exception adaptés à la nature de vos cheveux.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 border border-neutral-800 hover:border-gold-400/50 p-8 rounded-2xl transition-all">
+          <h3 class="font-serif text-xl text-white mb-2">Soin Botox Capillaire</h3>
+          <p class="text-xs text-neutral-500 mb-6">Reconstituant intense & brillance</p>
+          <div class="text-2xl font-bold text-gold-400 mb-6">318 000 MGA</div>
+          <p class="text-sm text-neutral-400 leading-relaxed">Diagnostic personnalisé, application du soin réparateur et coiffage finition miroir.</p>
+        </div>
+
+        <div class="bg-neutral-900 border border-gold-400 p-8 rounded-2xl relative shadow-xl shadow-gold-400/5">
+          <span class="absolute -top-3 right-6 bg-gold-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Populaire</span>
+          <h3 class="font-serif text-xl text-white mb-2">Soin Tokio Inkarami</h3>
+          <p class="text-xs text-neutral-500 mb-6">Haute technologie aux 8 kératines</p>
+          <div class="text-2xl font-bold text-gold-400 mb-6">338 000 MGA</div>
+          <p class="text-sm text-neutral-400 leading-relaxed">Soin régénérant en profondeur redonnant élasticité, force et éclat à la fibre capillaire.</p>
+        </div>
+
+        <div class="bg-neutral-900 border border-neutral-800 hover:border-gold-400/50 p-8 rounded-2xl transition-all">
+          <h3 class="font-serif text-xl text-white mb-2">Soin Tokio + Coupe</h3>
+          <p class="text-xs text-neutral-500 mb-6">Prestation complète sur-mesure</p>
+          <div class="text-2xl font-bold text-gold-400 mb-6">510 000 MGA</div>
+          <p class="text-sm text-neutral-400 leading-relaxed">Traitement Tokio Limited associé à une coupe structurée pour sublimer les pointes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-800 py-12 bg-neutral-950 text-center text-sm text-neutral-500">
+    <p>© 2026 KIALA PI Beauty. Tous droits réservés.</p>
+  </footer>
 
 </body>
 </html>
